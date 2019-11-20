@@ -1,0 +1,12 @@
+sentence = 'I LOVE AFRICA MOSTLY THE ANIMALS'
+vowels = {'A', 'E', 'I', 'O', 'U'}
+words = sentence.strip().split(' ')
+pig_latin = []
+ 
+for word in words:
+    if word[0] in vowels:
+        pig_latin.append(word + 'AY')
+    else:
+        pig_latin.append(word[1:] + word[0] + 'AY')
+ 
+print(' '.join(pig_latin))
