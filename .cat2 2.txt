@@ -1,0 +1,7 @@
+n = input("enter num ") 
+s = input("enter num ")
+if ("n % s"):
+     print ("false")
+else:
+      print ("true")
+       
